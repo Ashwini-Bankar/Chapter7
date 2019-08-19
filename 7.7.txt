@@ -1,0 +1,4 @@
+7.7  In the output from the size command at the end of Section 7.6, why aren’t any sizes given for the heap and the stack?
+
+ANS:
+	

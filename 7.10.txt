@@ -1,0 +1,17 @@
+7.10 At the end of Section 7.10, we showed how a function can’t return a pointer to an automatic variable. Is the following code correct?
+
+int f1(int val)
+{
+	int num = 0;
+	int *ptr = &num;
+	if (val == 0) 
+	{
+		int val;
+		val = 5;
+		ptr = &val;
+	}
+	return(*ptr + 1);
+}
+
+ANS:
+	The code is incorrect, since it references the automatic integer val through a pointer after the automatic variable is no longer in existence. Automatic variables declared after the left brace that starts a compound statement disappear after the matching right brace.

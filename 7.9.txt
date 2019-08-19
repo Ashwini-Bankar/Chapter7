@@ -1,0 +1,4 @@
+7.9 In Section 7.7, why does the size of the executable file differ so dramatically when we use shared libraries for such a trivial program?
+
+ANS:
+	When shared libraries are not used, a large portion of the executable file is occupied by the standard I/O library.

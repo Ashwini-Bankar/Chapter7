@@ -1,0 +1,6 @@
+7.1  On an Intel x86 system under Linux, if we execute the program that prints ‘‘hello, world’’ and do not call exit or return, the termination status of the program — which we can examine with the shell—is 13. Why?
+
+
+ANS:
+	It appears that the return value from printf (the number of characters output) becomes the return value of main. To verify this theory, change the length of the string printed and see if the new length matches the return value. Note that not all systems exhibit this property. Also note that if you enable the ISO C  extensions in gcc, then the return value is always 0, as required by the standard.
+

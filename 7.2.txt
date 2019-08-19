@@ -1,0 +1,4 @@
+7.2 When is the output from the printfs in Figure 7.3 actually output?
+
+ANS:
+	When the program is run interactively, standard output is usually line buffered, so the actual output occurs when each newline is output. If standard output were directed to a file, however, it would probably be fully buffered, and the actual output wouldn't occur until the standard I/O cleanup is performed.

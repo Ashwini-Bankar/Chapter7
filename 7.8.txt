@@ -1,0 +1,4 @@
+7.8  In Section 7.7, the two file sizes (879443 and 8378) don’t equal the sums of their respective text and data sizes. Why?
+
+ANS:
+	The executable file (a.out) contains symbol table information that can be helpful in debugging a core file. To remove this information, the strip(1) command is used. Stripping the two a.out files reduces their size to 381,976 and 2,912 bytes.

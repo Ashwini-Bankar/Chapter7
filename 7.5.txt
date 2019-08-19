@@ -1,0 +1,9 @@
+7.5  Use the typedef facility of C to define a new data type Exitfunc for an exit handler. Redo the prototype for atexit using this data type
+
+ANS:
+	The definitions are
+
+  	 	typedef void     Exitfunc(void);
+
+   		int atexit(Exitfunc *func);
+

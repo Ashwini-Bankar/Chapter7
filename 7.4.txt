@@ -1,0 +1,4 @@
+7.4  Some UNIX system implementations purposely arrange that, when a program is executed, location 0 in the data segment is not accessible. Why?
+
+ANS:
+	This provides a way to terminate the process when it tries to dereference a null pointer, a common C programming error.
